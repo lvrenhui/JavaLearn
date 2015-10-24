@@ -11,6 +11,6 @@ public class BossTest {
 
     @Test
     public void testOrder() throws Exception {
-
+        new Boss().order();
     }
 }
