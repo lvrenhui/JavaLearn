@@ -6,16 +6,10 @@ package advance.callback;
  */
 public class Worker {
 
-    private WorkCallback callback = null;
 
-    public void setCallback(WorkCallback callback) {
-        this.callback = callback;
-    }
-
-
-    public void doSomeWork() {
-        System.out.println("worker: I am doing ...");
-        callback.work();
+    public void doSomeWork(Notification notification) {
+        INotify notify = null;
+        notify.onNotify(notification);
     }
 
 }
